@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cat Energy</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="form-header">
+            <div class="form-header__wrapper">
+                <div class="form-header__logo-wrapper logo__block">
+                    <a class="logo__block--cat" href="#">
+                        <img class="logo__image cat-image" src="../img/logo1.svg" width="" height="" alt="CatEnergy">
+                    </a>
+                    <a class="logo__block--text " href="#">
+                        <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
+                    </a>
+                </div>
+                <nav class="nav-header">
+                    <button type="button" class="nav-header__toggle">Открыть меню</button>
+                    <div class="nav-header__wrapper">
+                        <ul class="nav-header__list site-list">
+                            <li class="site-list__item">
+                                <a href="https://echo.htmlacademy.ru">Главная</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="https://echo.htmlacademy.ru">Каталог продукции</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="https://echo.htmlacademy.ru">Подбор программы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="form-main">
+            <section class="selection">
+                <h2 class="selection__title">Подбор программы</h2>
+                <p class="selection__subtitle">Заполните анкету и мы подберем
+                    программу питания для вашего кота</p>
+                <div class="selection__form data">
+                    <form action="#" class="data__form" method="post">
+                        <ul class="data__list list-req">
+                            <li class="data__item">
+                                <label for="name">Имя:<sup>*</sup>
+                                    <input type="text" class="data__name" id="name" value="" placeholder="Барсик">
+                                </label>
+                            </li>
+                            <li class="data__item">
+                                <label for="weight">Вес (кг):<sup>*</sup>
+                                    <input type="text" class="data__weight" id="weight" value="" placeholder="7">
+                                </label>
+                            </li>
+                            <li class="data__item">
+                                <label for="age">Возраст (лет):<sup>*</sup>
+                                    <input type="text" class="data__age" id="age" value="" placeholder="7">
+                                </label>
+                            </li>
+                        </ul>
+                        <fieldset>
+                            <div class="data__filter filter-programs">
+                                <label class="filter-programs__loss" for="loss">
+                                    <input class="visually-hidden filter-programs__input filter-programs__radio" type="radio"  name="loss" id="loss" >
+                                    <span class="filter-programs__radio--indicator"></span>
+                                    Похудение
+                                </label>
+                                <label class="filter-programs__weight" for="weight">
+                                    <input class="visually-hidden filter-programs__input filter-programs__radio" type="radio"  name="weight" id="weight" >
+                                    <span class="filter-programs__radio--indicator"></span>
+                                    Набор массы
+                                </label>
+                                <label class="filter-programs__idk" for="idk">
+                                    <input class="visually-hidden filter-programs__input filter-programs__radio" type="radio"  name="idk" id="idk" >
+                                    <span class="filter-programs__radio--indicator"></span>
+                                    Не знаю (нужен ваш совет)
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <section class="owner">
+                <h2 class="owner__title">Контактные данные (владельца кота)</h2>
+                <form action="#" class="owner__form" method="post">
+                    <ul class="owner__list list-req">
+                        <li class="owner__item">
+                            <label for="email">E-mail:<sup>*</sup>
+                                <input type="email" class="owner__email" id="email" value="" placeholder="kuklachev@gmail.com">
+                                <span class="owner__pic letter-image"></span>
+                            </label>
+                        </li>
+                        <li class="owner__item">
+                            <label for="tel">Телефон:<sup>*</sup>
+                                <input type="tel" class="owner__tel" id="tel" value="" placeholder="8 (960) 900-60-90">
+                                <span class="owner__pic tel-image"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+            <section class="comment">
+                <div class="comment__wrapper">
+                    <h2 class="comment__title">Комментарий</h2>
+                    <textarea class="comment__area" id="cooment-area" placeholder="Расскажите обо всех повадках кота" rows="5" cols="10"></textarea>
+                </div>
+            </section>
+            <section class="more">
+                <div class="more__wrapper">
+                    <form class="more__form" action="#" method="post">
+                        <fieldset>
+                            <div class="more__filter filter-products">
+                                <label class="filter-products__sweetener" for="sweetener">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="sweetener" id="sweetener" checked>
+                                    <span class="filter-products__sweetener--checkbox"></span>
+                                    Сахарозаменитель
+                                </label>
+                                <label class="filter-products__water" for="water">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="water" id="water" >
+                                    <span class="filter-products__sweetener--checkbox"></span>
+                                    Питьевая вода
+                                </label>
+                                <label class="filter-products__milk" for="mlik">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="mlik" id="mlik" >
+                                    <span class="filter-products__sweetener--checkbox"></span>
+                                    Молоко
+                                </label>
+                                <label class="filter-products__vitamins" for="vitamins">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="vitamins" id="vitamins" >
+                                    <span class="filter-products__sweetener--checkbox"></span>
+                                    Витамины
+                                </label>
+                            </div>
+                        </fieldset>
+                        <button type="button" class="btn btn-sub">Отправаить заявку</button>
+                    </form>
+                    <p class="more__text"> <sup>*</sup>— Обязательные поля</p>
+                </div>
+            </section>
+
+        </main>
+        <footer class="form-footer">
+            <div class="form-footer__wrapper">
+                <div class="form-footer__contacts contacts">
+                    <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+                    <p class="contacts__text">ул. Большая Конюшенная, д. 19/8
+                        Санкт-Петербург</p>
+                </div>
+                <div class="form-footer__map"></div>
+                <a class="logo__block--text " href="#">
+                    <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
+                </a>
+                <div class="form-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--vk" href="vk.com">
+                                Вконтакте
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--inst" href="instagram.com">
+                                Инстаграм
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--fb" href="fb.com">
+                                Фейсбук
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-footer__copyright copyright">
+                    <p class="copyright__title">HTML Academy</p>
+                    <a class="copyright__link" href="https://echo.htmlacademy.ru"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
