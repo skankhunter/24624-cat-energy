@@ -7,31 +7,29 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="form-header">
-            <div class="form-header__wrapper">
-                <div class="form-header__logo-wrapper logo__block">
-                    <a class="logo__block--cat" href="#">
-                        <img class="logo__image cat-image" src="../img/logo1.svg" width="" height="" alt="CatEnergy">
-                    </a>
-                    <a class="logo__block--text " href="#">
-                        <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
-                    </a>
-                </div>
-                <nav class="nav-header">
-                    <button type="button" class="nav-header__toggle">Открыть меню</button>
-                    <div class="nav-header__wrapper">
-                        <ul class="nav-header__list site-list">
-                            <li class="site-list__item">
-                                <a href="https://echo.htmlacademy.ru">Главная</a>
-                            </li>
-                            <li class="site-list__item">
-                                <a href="https://echo.htmlacademy.ru">Каталог продукции</a>
-                            </li>
-                            <li class="site-list__item">
-                                <a href="https://echo.htmlacademy.ru">Подбор программы</a>
-                            </li>
-                        </ul>
+        <header class="header">
+            <div class="header__wrap">
+                <nav class="nav">
+                    <div class="logo logo__wrap ">
+                        <a class="logo__cat" href="#">
+                            <img class="logo__image cat-image" src="../img/logo1.svg" width="" height="" alt="CatEnergy">
+                        </a>
+                        <a class="logo__text" href="#">
+                            <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
+                        </a>
                     </div>
+                    <button type="button" class="nav__toggle">Открыть меню</button>
+                    <ul class="nav__list site-list">
+                        <li class="site-list__item">
+                           <a href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="catalog.html">Каталог продукции</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Подбор программы</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -49,8 +47,8 @@
                                 </label>
                             </li>
                             <li class="data__item">
-                                <label for="weight">Вес (кг):<sup>*</sup>
-                                    <input type="text" class="data__weight" id="weight" value="" placeholder="7">
+                                <label for="weight-form">Вес (кг):<sup>*</sup>
+                                    <input type="text" class="data__weight" id="weight-form" value="" placeholder="7">
                                 </label>
                             </li>
                             <li class="data__item">
@@ -66,8 +64,8 @@
                                     <span class="filter-programs__radio--indicator"></span>
                                     Похудение
                                 </label>
-                                <label class="filter-programs__weight" for="weight">
-                                    <input class="visually-hidden filter-programs__input filter-programs__radio" type="radio"  name="weight" id="weight" >
+                                <label class="filter-programs__weight" for="weight-prog">
+                                    <input class="visually-hidden filter-programs__input filter-programs__radio" type="radio"  name="weight" id="weight-prog" >
                                     <span class="filter-programs__radio--indicator"></span>
                                     Набор массы
                                 </label>
@@ -101,33 +99,33 @@
                 </form>
             </section>
             <section class="comment">
-                <div class="comment__wrapper">
+                <div class="comment__wrap">
                     <h2 class="comment__title">Комментарий</h2>
                     <textarea class="comment__area" id="cooment-area" placeholder="Расскажите обо всех повадках кота" rows="5" cols="10"></textarea>
                 </div>
             </section>
             <section class="more">
-                <div class="more__wrapper">
+                <div class="more__wrap">
                     <form class="more__form" action="#" method="post">
                         <fieldset>
                             <div class="more__filter filter-products">
-                                <label class="filter-products__sweetener" for="sweetener">
-                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="sweetener" id="sweetener" checked>
+                                <label class="filter-products__item" for="sweetener">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="checkbox"  name="sweetener" id="sweetener" checked>
                                     <span class="filter-products__sweetener--checkbox"></span>
                                     Сахарозаменитель
                                 </label>
-                                <label class="filter-products__water" for="water">
-                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="water" id="water" >
+                                <label class="filter-products__item" for="water">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="checkbox"  name="water" id="water" >
                                     <span class="filter-products__sweetener--checkbox"></span>
                                     Питьевая вода
                                 </label>
-                                <label class="filter-products__milk" for="mlik">
-                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="mlik" id="mlik" >
+                                <label class="filter-products__item" for="milk">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="checkbox"  name="milk" id="milk" >
                                     <span class="filter-products__sweetener--checkbox"></span>
                                     Молоко
                                 </label>
-                                <label class="filter-products__vitamins" for="vitamins">
-                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="radio"  name="vitamins" id="vitamins" >
+                                <label class="filter-products__item" for="vitamins">
+                                    <input class="visually-hidden filter-programs__input filter-programs__checkbox" type="checkbox"  name="vitamins" id="vitamins" >
                                     <span class="filter-products__sweetener--checkbox"></span>
                                     Витамины
                                 </label>
@@ -140,41 +138,42 @@
             </section>
 
         </main>
-        <footer class="form-footer">
-            <div class="form-footer__wrapper">
-                <div class="form-footer__contacts contacts">
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__contacts contacts">
                     <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
                     <p class="contacts__text">ул. Большая Конюшенная, д. 19/8
-                        Санкт-Петербург</p>
-                </div>
-                <div class="form-footer__map"></div>
-                <a class="logo__block--text " href="#">
-                    <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
-                </a>
-                <div class="form-footer__social social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link social__link--vk" href="vk.com">
-                                Вконтакте
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--inst" href="instagram.com">
-                                Инстаграм
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--fb" href="fb.com">
-                                Фейсбук
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-footer__copyright copyright">
-                    <p class="copyright__title">HTML Academy</p>
-                    <a class="copyright__link" href="https://echo.htmlacademy.ru"></a>
-                </div>
-            </div>
+                      Санкт-Петербург</p>
+                  </div>
+                  <div class="footer__map">
+                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124025!2d30.32089461618791!3d59.93879686904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516614301500" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <a class="logo__text" href="#">
+                      <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
+                  </a>
+                  <ul class="social__list">
+                      <li class="social__item">
+                          <a class="social__link social__link--vk" href="vk.com">
+                            Вконтакте
+                          </a>
+                      </li>
+                      <li class="social__item">
+                          <a class="social__link social__link--inst" href="instagram.com">
+                            Инстаграм
+                          </a>
+                      </li>
+                      <li class="social__item">
+                          <a class="social__link social__link--fb" href="fb.com">
+                            Фейсбук
+                          </a>
+                      </li>
+                  </ul>
+
+                  <div class="footer__copyright copyright">
+                      <p class="copyright__title">HTML Academy</p>
+                      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+                  </div>
+              </div>
         </footer>
     </body>
 </html>

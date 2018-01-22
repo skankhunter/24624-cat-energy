@@ -7,31 +7,29 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="index-header">
-            <div class="index-header__wrapper">
-                <div class="index-header__logo-wrapper logo__block">
-                    <a class="logo__block--cat" href="#">
-                        <img class="logo__image cat-image" src="../img/logo1.svg" width="" height="" alt="CatEnergy">
-                     </a>
-                    <a class="logo__block--text " href="#">
-                        <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
+        <header class="header">
+            <div class="header__wrap">
+              <nav class="nav">
+                  <div class="logo logo__wrap ">
+                    <a class="logo__cat" href="#">
+                      <img class="logo__image cat-image" src="../img/logo1.svg" width="" height="" alt="CatEnergy">
                     </a>
-                </div>
-                <nav class="nav-header">
-                    <button type="button" class="nav-header__toggle">Открыть меню</button>
-                    <div class="nav-header__wrapper">
-                        <ul class="nav-header__list site-list">
-                            <li class="site-list__item">
-                                <a href="https://echo.htmlacademy.ru">Главная</a>
-                            </li>
-                            <li class="site-list__item">
-                                <a href="https://echo.htmlacademy.ru">Каталог продукции</a>
-                            </li>
-                            <li class="site-list__item">
-                                <a href="https://echo.htmlacademy.ru">Подбор программы</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a class="logo__text" href="#">
+                      <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
+                    </a>
+                  </div>
+                  <button type="button" class="nav__toggle">Открыть меню</button>
+                  <ul class="nav__list site-list">
+                      <li class="site-list__item">
+                         <a href="index.html">Главная</a>
+                      </li>
+                      <li class="site-list__item">
+                         <a href="catalog.html">Каталог продукции</a>
+                      </li>
+                      <li class="site-list__item">
+                         <a href="form.html">Подбор программы</a>
+                      </li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -45,34 +43,36 @@
                 <a class="functional-promo__food">
                     <img class="functional-promo__food--image" src="../img/.jpg" alt="кура" width="" height="">
                 </a>
-                <a class="btn btn-more" href="https://echo.htmlacademy.ru">Подобрать программу</a>
+                <a class="btn btn-more" href="form.html">Подобрать программу</a>
             </section>
             <section class="programs">
-                <h2 class="visually-hidden">Программы</h2>
-                <ul class="programs__list">
-                    <li class="programs__item programs__item--loss">
-                        <h3 class="programs__title">Похудение</h3>
-                        <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-                            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                        <a class="programs__link">
-                            <p class="programs__link--text">Каталог Slim</p>
-                            <span class="advantages__link--arrow"></span>
-                        </a>
-                    </li>
-                    <li class="programs__item programs__item--weight">
-                        <h3 class="programs__title">Набор массы</h3>
-                        <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак?
-                            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                        <a class="programs__link">
-                            <p class="programs__link--text">Каталог Pro</p>
-                            <span class="programs__link--arrow"></span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="programs__wrap">
+                    <h2 class="visually-hidden">Программы</h2>
+                    <ul class="programs__list">
+                        <li class="programs__item">
+                            <h3 class="programs__title">Похудение</h3>
+                            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+                                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                            <a class="programs__link" href="#">
+                                <p class="programs__link--text">Каталог Slim</p>
+                                <span class="advantages__link--arrow"></span>
+                            </a>
+                        </li>
+                        <li class="programs__item">
+                            <h3 class="programs__title">Набор массы</h3>
+                            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак?
+                                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                            <a class="programs__link" href="#">
+                                <p class="programs__link--text">Каталог Pro</p>
+                                <span class="programs__link--arrow"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="advantages">
                 <h2 class="visually-hidden">Преимущетсва</h2>
-                <div class="advantages-wrapper">
+                <div class="advantages-wrap">
                     <h2 class="advantages__title">Как это работает</h2>
                     <ul class="advantages__list">
                         <li class="advantages__item advantages__item--leaf">
@@ -92,7 +92,7 @@
             </section>
             <section class="example">
                 <h2 class="visually-hidden">Пример</h2>
-                <div class="example__wrapper">
+                <div class="example__wrap">
                     <h2 class="example__title">Живой пример</h2>
                     <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
                         Отличный результат без изнуряющих тренировок!
@@ -128,41 +128,39 @@
                     </div>
                 </div>
             </section>
-
         </main>
-        <footer class="index-footer">
-            <div class="index-footer__wrapper">
-                <div class="index-footer__contacts contacts">
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__contacts contacts">
                     <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-                    <p class="contacts__text">ул. Большая Конюшенная, д. 19/8
-                        Санкт-Петербург</p>
+                    <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </div>
-                <div class="index-footer__map"></div>
-                <a class="logo__block--text " href="#">
+                <div class="footer__map">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124025!2d30.32089461618791!3d59.93879686904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516614301500" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <a class="logo__text" href="#">
                     <img class="logo__image text-image" src="../img/logo2.svg" width="" height="" alt="CatEnergy">
                 </a>
-                <div class="index-footer__social social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link social__link--vk" href="vk.com">
-                                Вконтакте
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--inst" href="instagram.com">
-                                Инстаграм
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--fb" href="fb.com">
-                                Фейсбук
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="index-footer__copyright copyright">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="vk.com">
+                          Вконтакте
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--inst" href="instagram.com">
+                          Инстаграм
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--fb" href="fb.com">
+                          Фейсбук
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copyright copyright">
                     <p class="copyright__title">HTML Academy</p>
-                    <a class="copyright__link" href="https://echo.htmlacademy.ru"></a>
+                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
                 </div>
             </div>
         </footer>
