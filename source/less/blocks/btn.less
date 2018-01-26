@@ -1,19 +1,29 @@
 .btn {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  background: rgba(104,183,56, 1);
+  background-color: rgba(104,183,56, 1);
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 25px;
   color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .btn--to-all {
-  color: #222222;
-  background: #f2f2f2;
+  color: @black-lighter;
+  background-color: @bg-lighter;
 }
 
 .btn--more {
@@ -25,6 +35,7 @@
 }
 
 .btn--sub {
-
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
