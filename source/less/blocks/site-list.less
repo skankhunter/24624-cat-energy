@@ -2,3 +2,43 @@
   text-decoration: none;
   color: @black-darker;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 0px;
+  }
+
+  .site-list__item--active {
+    position: relative;
+  }
+
+  .site-list__item--active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    border-bottom: 2px solid @green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    color: white;
+  }
+
+  .site-list__item--active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    border-bottom: 2px solid white;
+  }
+}

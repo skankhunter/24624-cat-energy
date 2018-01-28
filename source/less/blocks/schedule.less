@@ -1,5 +1,12 @@
 .schedule {
+  position: relative;
   background-color: @bg-lighter;
+  width: 280px;
+  min-height: 266px;
+}
+
+.schedule-loss {
+  margin-bottom: 20px;
 }
 
 .schedule__description {
@@ -7,9 +14,13 @@
   font-size: 14px;
   line-height: 18px;
   color: @grey-light;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 46px;
 }
 
 .schedule__link {
+  display: flex;
   font-family: "oswaldmedium", serif;
   text-decoration: none;
   color: @black-darker;
@@ -19,11 +30,254 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-left: 20px;
+
 }
 
 .schedule__title {
   font-size: 24px;
   line-height: 37px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
+  padding-left: 93px;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.schedule__arrow {
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  width: 23px;
+  height: 14px;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.schedule__link:after {
+  position: absolute;
+  content: '';
+  bottom: 60px;
+  width: 244px;
+  height: 1px;
+  background: #d9d9d9;
+  margin-left: 20px;
+}
+
+.schedule-loss:before {
+  content: '';
+  position: absolute;
+  background: url("../img/icon-cat-slim.svg") no-repeat;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 53px;
+  z-index: 2;
+}
+
+.schedule-loss:after {
+  content: '';
+  position: absolute;
+  background-color: @green;
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+  width: 50px;
+  height: 53px;
+  z-index: 1;
+}
+
+.schedule-weight:before {
+  content: '';
+  position: absolute;
+  background: url("../img/icon-cat-pro.svg") no-repeat;
+  top: 45px;
+  left: 14px;
+  width: 67px;
+  height: 50px;
+  z-index: 2;
+}
+
+.schedule-weight:after {
+  content: '';
+  position: absolute;
+  background-color: @green;
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+  width: 50px;
+  height: 53px;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .schedule {
+    width: 708px;
+    min-height: 367px;
+  }
+
+  .schedule-loss {
+    margin-bottom: 30px;
+  }
+
+  .schedule__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 56px;
+    padding-right: 280px;
+    margin-bottom: 42px;
+  }
+
+  .schedule__description:nth-child(2) {
+    padding-right: 312px;
+  }
+
+  .schedule__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 56px;
+
+  }
+
+  .schedule__title {
+    font-size: 36px;
+    padding-left: 56px;
+    padding-top: 77px;
+    font-weight: 700;
+  }
+
+  .schedule__arrow {
+    margin-top: 26px;
+  }
+
+  .schedule__link:after {
+    display: none;
+  }
+
+  .schedule-loss:before {
+    content: '';
+    position: absolute;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    top: 81px;
+    left: 476px;
+    width: 140px;
+    height: 194px;
+    z-index: 2;
+  }
+
+  .schedule-loss:after {
+    content: '';
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 94px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+
+  .schedule-weight:before {
+    content: '';
+    position: absolute;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    top: 135px;
+    left: 412px;
+    width: 275px;
+    height: 116px;
+    z-index: 2;
+  }
+
+  .schedule-weight:after {
+    content: '';
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 94px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .schedule {
+    width: 570px;
+    min-height: 371px;
+    margin: 0;
+    margin-right: 80px;
+  }
+
+  .schedule:last-child {
+    margin-right: 0;
+  }
+
+  .schedule__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    padding-left: 52px;
+    padding-right: 53px;
+    margin-bottom: 15px;
+  }
+
+  .schedule__description:nth-child(2) {
+    padding-right: 53px;
+  }
+
+  .schedule__text {
+    padding-left: 52px;
+  }
+
+  .schedule__title {
+    padding-left: 214px;
+    padding-top: 82px;
+    margin-bottom: 70px;
+    font-weight: 700;
+  }
+
+  .schedule-loss:before {
+    content: '';
+    position: absolute;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    top: 42px;
+    left: 66px;
+    width: 71px;
+    height: 97px;
+    z-index: 2;
+  }
+
+  .schedule-loss:after {
+    content: '';
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  .schedule-weight:before {
+    content: '';
+    position: absolute;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    top: 70px;
+    left: 34px;
+    width: 134px;
+    height: 56px;
+    z-index: 2;
+  }
+
+  .schedule-weight:after {
+    content: '';
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
 }
