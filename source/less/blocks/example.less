@@ -1,22 +1,126 @@
+.example {
+  width: 320px;
+  margin: 0 auto;
+  background-color: @bg-lighter;
+  min-height: 705px;
+}
+
+.example__wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example__description {
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", serif;
   color: @grey-light;
+  padding-right: 13px;
 }
 
 .example__subtitle {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   font-family: "oswaldmedium", serif;
+  text-align: center;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .example__title {
   font-size: 36px;
   line-height: 60px;
+  padding-top: 25px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
-.example__wrap {
-  background-color: @bg-lighter;
+@media (min-width: @tablet-width) {
+  .example {
+    position: relative;
+    width: 768px;
+    background-color: transparent;
+    min-height: 1085px;
+  }
+
+  .example__wrap {
+    width: 708px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 32px;
+  }
+
+  .example__subtitle {
+    position: absolute;
+    top: 210px;
+    right: 0;
+    font-size: 20px;
+    line-height: 20px;
+    width: 186px;
+    text-align: right;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 25px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    position: relative;
+    width: 1440px;
+    min-height: 560px;
+  }
+
+  .example:after {
+    position: absolute;
+    content: '';
+    top: 100px;
+    left: 0;
+    width: 1440px;
+    min-height: 463px;
+    background-color: @bg-lighter;
+    z-index: -1;
+  }
+
+  .example__wrap {
+    display: flex;
+    width: 1220px;
+  }
+
+  .example__text-wrap {
+    width: 50%;
+  }
+
+  .example__description {
+    padding-right: 179px;
+    margin-bottom: 80px;
+  }
+
+  .example__subtitle {
+    position: unset;
+    width: 325px;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    margin: 0;
+    margin-top: -20px;
+    margin-bottom: 130px;
+    font-weight: 500;
+  }
 }

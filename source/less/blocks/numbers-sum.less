@@ -1,8 +1,21 @@
+.numbers-sum {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 47px;
+}
+
+.numbers-sum__text {
+  text-align: center;
+}
+
 .numbers-sum__lead {
   font-family: "oswaldregular", serif;
+  display: block;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .numbers-sum__description {
@@ -10,4 +23,47 @@
   font-size: 12px;
   line-height: 12px;
   color: @grey-light;
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .numbers-sum {
+    margin-top: 47px;
+    justify-content: flex-start;
+  }
+
+  .numbers-sum__text {
+    text-align: center;
+  }
+
+  .numbers-sum__lead {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .numbers-sum__description {
+    font-size: 14px;
+    line-height: 14px;
+     }
+}
+
+@media (min-width: @desktop-width) {
+  .numbers-sum {
+   margin-bottom: 70px;
+  }
+
+  .numbers-sum__text {
+    margin-right: 30px;
+  }
+
+  .numbers-sum__text:last-child {
+    margin-right: 0;
+  }
+
+  .numbers-sum__lead {
+    margin-bottom: 15px;
+  }
 }
