@@ -29,3 +29,59 @@
   font-family: "Arial", serif;
   color: @grey-light;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-top: 50px;
+  }
+
+  .contacts:after {
+    width: 768px;
+    height: 150px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 40px;
+    padding-right: 162px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    padding-right: 40px;
+    padding-left: 130px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 570px;
+    height: 166px;
+    padding-top: 45px;
+  }
+
+  .contacts:after {
+   content: none;
+  }
+
+  .contacts__title {
+    padding-left: 74px;
+    padding-right: 56px;
+  }
+
+  .contacts__text {
+    padding-right: 90px;
+    padding-left: 40px;
+    text-align: left;
+  }
+
+}

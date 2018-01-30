@@ -39,3 +39,70 @@ footer {
 .footer__social-wrap {
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  footer {
+    width: 768px;
+  }
+
+  .footer__wrap {
+    width: 708px;
+  }
+
+  .footer__map {
+    width: 768px;
+    height: 400px;
+    background: url("../img/map-tablet.jpg") no-repeat;
+    margin-left: -30px;
+  }
+
+  .footer__map-int {
+    display: block;
+    width: 768px;
+    height: 400px;
+  }
+
+  .footer__social-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  footer {
+    width: 1440px;
+  }
+
+  .footer__wrap {
+    width: 1220px;
+  }
+
+  .footer__map {
+    position: relative;
+    width: 1440px;
+    height: 400px;
+    background: url("../img/map-desktop.jpg") no-repeat;
+    margin-left: -110px;
+  }
+
+  .footer__map-int {
+    display: block;
+    width: 1440px;
+    height: 400px;
+  }
+
+  .footer__social-wrap {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+  }
+
+  .footer__logo {
+    margin: 0;
+    padding-top: 20px;
+  }
+}

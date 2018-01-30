@@ -1,3 +1,35 @@
 header {
+  width: 320px;
+  margin: 0 auto;
+}
 
+.header__wrap {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  header {
+    width: 768px;
+  }
+
+  .header__wrap {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  header {
+    width: 1440px;
+  }
+
+  .header__wrap {
+    width: 1220px;
+  }
 }
