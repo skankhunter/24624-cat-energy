@@ -1,4 +1,56 @@
 .radio {
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.radio:last-child {
+  margin-bottom: 0;
+}
+
+.radio__control {
+  display: none;
+}
+
+.radio__indicator {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bababa;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.radio__indicator, label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.radio__control:checked + .radio__indicator::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  left: 9px;
+  background: #68b738;
+  border-radius: 50%;
+}
+.radio__indicator,
+.radio:checked + .radio__indicator::before {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
 }

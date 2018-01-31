@@ -1,0 +1,86 @@
+.owner {
+  position: relative;
+}
+
+.owner::before {
+  content: '';
+  position: absolute;
+  top: -55px;
+  right: -30px;
+  width: 100px;
+  height: 3px;
+  background-color: @green;
+}
+
+.owner::after {
+  content: '';
+  position: absolute;
+  bottom: -37px;
+  right: -30px;
+  width: 160px;
+  height: 3px;
+  background-color: @green;
+}
+
+.owner__item {
+  margin-bottom: 15px;
+}
+
+.owner__item:last-child {
+  margin-bottom: 0;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .owner::before {
+    content: '';
+    position: absolute;
+    top: -88px;
+    right: -30px;
+    width: 145px;
+    height: 3px;
+    background-color: @green;
+  }
+
+  .owner::after {
+    content: '';
+    position: absolute;
+    bottom: -96px;
+    right: -30px;
+    width: 480px;
+    height: 3px;
+    background-color: @green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .owner::before {
+    content: '';
+    position: absolute;
+    top: -88px;
+    right: -120px;
+    width: 775px;
+    height: 3px;
+    background-color: @green;
+  }
+
+  .owner::after {
+    content: '';
+    position: absolute;
+    bottom: -96px;
+    right: -120px;
+    width: 1112px;
+    height: 3px;
+    background-color: @green;
+  }
+
+  .owner__item {
+    width: 45%;
+  }
+}

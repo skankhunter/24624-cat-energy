@@ -1,4 +1,7 @@
 .input {
+  display: flex;
+  position: relative;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -11,7 +14,59 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-light;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  margin-left: 15px;
+  border: 1px solid #e7e7e7;
+}
+
+.input__text {
+  flex-grow: 1;
+}
+
+.input__pic--letter {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  background: url("../img/icon-mail.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.input__pic--tel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: url("../img/icon-phone.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .input__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .input__pic--letter {
+    top: 19px;
+    right: 20px;
+  }
+
+  .input__pic--tel {
+    top: 16px;
+    right: 16px;
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+
 }

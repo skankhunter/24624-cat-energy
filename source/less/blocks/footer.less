@@ -11,9 +11,19 @@ footer {
   margin: 0 auto;
 }
 
-.footer__contacts--index {
-  background: @bg-white;
+.footer__contacts--index::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 320px;
+  height: 115px;
+  z-index: -1;
 }
+
+
+
 
 .footer__map {
   width: 320px;
@@ -68,6 +78,16 @@ footer {
     align-items: center;
     min-height: 150px;
   }
+
+  .footer__contacts--index{
+    margin-top: 0;
+  }
+
+  .footer__contacts--index::after {
+    width: 768px;
+    height: 200px;
+    background: white;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -104,5 +124,20 @@ footer {
   .footer__logo {
     margin: 0;
     padding-top: 20px;
+  }
+
+
+  .footer__contacts--index::after {
+    display: none;
+  }
+  .footer__contacts--index{
+    margin: 0;
+    position: absolute;
+    background: white;
+    top: 100px;
+    left: 100px;
+    width: 570px;
+    height: 166px;
+    padding-top: 45px;
   }
 }
