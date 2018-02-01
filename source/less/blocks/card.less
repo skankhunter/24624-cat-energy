@@ -1,4 +1,128 @@
+.card {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.card:last-child {
+  display: none;
+  margin-bottom: 0;
+}
+
+.card::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -20px;
+  height: 1px;
+  width: 320px;
+  background: #e6e6e6;
+}
+
+.card__wrap {
+  display: flex;
+}
+
 .card__text {
   font-size: 12px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    width: 324px;
+    height: 432px;
+    margin-bottom: 142px;
+    background-color: @bg-lighter;
+  }
+
+  .card::before {
+    content: none;
+  }
+
+  .card:nth-child(7) {
+    margin-bottom: 0;
+  }
+
+  .card:last-child {
+    display: block;
+    background: transparent;
+    border: 1px solid #e6e6e6;
+  }
+
+  .card__wrap {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .card__image {
+    display: block;
+    width: 175px;
+    height: 208px;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+
+  .card__text {
+    padding: 0 38px;
+  }
+
+  .card__all-products-wrap {
+    margin: 0 auto;
+    padding: 30px 30px;
+    padding-top: 60px;
+  }
+
+  .card__all-products__plus {
+    display: block;
+    background: url("../img/icon-plus-mobile.svg") no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    cursor: pointer;
+  }
+
+  .card__all-products__title {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: "oswaldmedium", serif;
+    color: @black-darker;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 25px;
+  }
+
+  .card__all-products__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Arial", serif;
+    color: @grey-light;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    width: 245px;
+    height: 432px;
+    margin-bottom: 142px;
+    background-color: @bg-lighter;
+  }
+
+  .card__image {
+    margin-top: -90px;
+  }
+
+  .card__all-products__title {
+    padding: 0 15px;
+  }
+
+  .card__all-products__subtitle {
+    padding: 0 5px;
+  }
 }

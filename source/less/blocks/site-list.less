@@ -7,6 +7,7 @@
 
 .site-list__link {
   display: block;
+  position: relative;
   text-decoration: none;
   color: @black-darker;
   text-transform: uppercase;
@@ -15,7 +16,17 @@
   font-weight: 700;
   padding: 18px 21px;
   padding-bottom: 19px;
-  border-top: 1px solid #e6e6e6;
+}
+
+
+.site-list__link::before {
+  position: absolute;
+  content: '';
+  width: 320px;
+  height: 1px;
+  top: 0;
+  left: -20px;
+  background-color: #e6e6e6;
 }
 
 .site-list__item--active-form {
@@ -41,6 +52,10 @@
     line-height: 24px;
     font-weight: 500;
     border: none;
+  }
+
+  .site-list__link::before {
+    content: none;
   }
 
   .site-list__link--form {

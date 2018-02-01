@@ -9,6 +9,16 @@ header {
   position: relative;
 }
 
+.header__wrap::after {
+  position: absolute;
+  content: '';
+  width: 320px;
+  height: 1px;
+  bottom: 0;
+  left: -20px;
+  background: #e6e6e6;
+}
+
 
 
 @media (min-width: @tablet-width) {
@@ -22,6 +32,11 @@ header {
     justify-content: space-between;
     padding-top: 10px;
   }
+
+  .header__wrap::after {
+    content: none;
+  }
+
 }
 
 @media (min-width: @desktop-width) {

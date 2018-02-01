@@ -15,6 +15,9 @@
 }
 
 .btn--to-all {
+  display: block;
+  padding-top: 0;
+  line-height: 37px;
   color: @black-lighter;
   background-color: @bg-lighter;
 }
@@ -33,7 +36,18 @@
   margin-top: 290px;
 }
 
+.btn--order {
+  display: block;
+  padding-top: 0;
+  line-height: 38px;
+}
+
 @media (min-width: @tablet-width) {
+  .btn {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
   .btn--more {
     margin: 0;
     margin-right: auto;
@@ -44,6 +58,19 @@
 
   .btn--sub {
     margin-left: 40px;
+  }
+
+  .btn--order {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .btn--to-all {
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
   }
 }
 
@@ -59,4 +86,11 @@
     height: 52px;
     margin-left: 0;
   }
+
+  .btn--to-all {
+    width: 169px;
+    line-height: 41px;
+  }
+
+
 }
