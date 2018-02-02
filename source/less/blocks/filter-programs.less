@@ -1,6 +1,29 @@
 .filter-programs {
-  border: 1px solid #e6e6e6;
-  padding: 25px 22px;
+  position: relative;
+}
+
+.filter-programs::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: -23px;
+  left: -22px;
+  background-color: #e6e6e6;
+}
+
+.filter-programs::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  bottom: -20px;
+  left: -22px;
+  background-color: #e6e6e6;
+}
+
+.filter-programs::after {
+
 }
 
 @media (min-width: @tablet-width) {
