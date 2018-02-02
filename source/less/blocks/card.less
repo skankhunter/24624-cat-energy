@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .card:last-child {
@@ -20,11 +20,17 @@
 
 .card__wrap {
   display: flex;
+  margin-bottom: -5px;
 }
 
 .card__text {
   font-size: 12px;
   line-height: 16px;
+}
+
+.card__image {
+  padding-top: 1px;
+  margin-left: -1px;
 }
 
 @media (min-width: @tablet-width) {
@@ -104,6 +110,10 @@
     padding: 0 20px;
     margin-bottom: 40px;
   }
+
+  .card .btn {
+    width: 249px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -124,5 +134,9 @@
 
   .card__all-products__subtitle {
     padding: 0 5px;
+  }
+
+  .card .btn {
+    width: 169px;
   }
 }

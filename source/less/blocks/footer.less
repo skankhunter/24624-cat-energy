@@ -4,6 +4,7 @@ footer {
   background-color: @bg-lighter;
   position: relative;
   z-index: -2;
+  min-height: 697px;
 }
 
 .footer__wrap {
@@ -23,14 +24,25 @@ footer {
 }
 
 
-
-
 .footer__map {
   width: 320px;
-  height: 350px;
+  height: 362px;
   background: url("../img/map-mobile.jpg") no-repeat;
   margin-left: -20px;
+  position: relative;
 }
+
+.footer__map::after {
+  top: 87px;
+  left: 118px;
+  width: 107px;
+  height: 105px;
+  background: url("../img/map-pin.png") no-repeat;
+  margin-left: -20px;
+  position: absolute;
+  content: '';
+}
+
 
 .footer__map-int {
   display: none;
@@ -41,9 +53,9 @@ footer {
   display: block;
   width: 130px;
   height: 25px;
-  padding-top: 40px;
+  padding-top: 39px;
   cursor: pointer;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 
 .footer__social-wrap {

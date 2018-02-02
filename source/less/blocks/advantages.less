@@ -18,10 +18,11 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 500;
+  margin-top: 17px;
 }
 
 .advantages__item {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .advantages__description {
@@ -45,18 +46,21 @@
   content: '';
   position: absolute;
   background: url("../img/advantage-leaf@1x.png") no-repeat;
-  top: 5px;
-  left: 8px;
+  top: 3px;
+  left: 5px;
   width: 40px;
   height: 40px;
   z-index: 1;
 }
 
-.advantages__item--leaf:after {
+.advantages__item--leaf:after,
+.advantages__item--water:after,
+.advantages__item--knife:after,
+.advantages__item--clock:after {
   content: '';
   position: absolute;
   background-color: @green;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -104,16 +108,6 @@
   z-index: 1;
 }
 
-.advantages__item--knife:after {
-  content: '';
-  position: absolute;
-  background-color: @green;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  z-index: 0;
-}
 
 .advantages__item--clock {
   position: relative;
@@ -130,16 +124,6 @@
   z-index: 1;
 }
 
-.advantages__item--clock:after {
-  content: '';
-  position: absolute;
-  background-color: @green;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  z-index: 0;
-}
 
 @media (min-width: @tablet-width) {
   .advantages {

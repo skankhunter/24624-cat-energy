@@ -1,15 +1,14 @@
 .contacts {
   display: flex;
+  width: 280px;
+  justify-content: space-between;
   z-index: 2;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.contacts:after {
-
+  margin-bottom: 8px;
+  margin-top: 14px;
 }
 
 .contacts__title {
+  width: 50%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -17,15 +16,18 @@
 }
 
 .contacts__text {
+  width: 50%;
   font-size: 14px;
   line-height: 20px;
   font-family: "Arial", serif;
   color: @grey-light;
-  text-align: right;
+  text-align: left;
+
+
 }
 
 .contacts--form {
-  padding-top: 15px;
+  padding-top: 14px;
 }
 
 @media (min-width: @tablet-width) {

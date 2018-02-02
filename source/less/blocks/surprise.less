@@ -1,7 +1,9 @@
 .surprise {
   position: relative;
   width: 280px;
+  height: 289px;
   margin: 0 auto;
+  margin-top: 45px;
 }
 
 .surprise::after {
@@ -15,8 +17,7 @@
 }
 
 .surprise--image {
-  width: 280px;
-  height: 288px;
+
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
 }
 
@@ -33,17 +34,45 @@
 
 @media (min-width: (@tablet-width)) {
   .surprise {
-   margin-top: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+
+  .surprise--image {
+    width: 708px;
+    height: 200px;
+    margin: 0;
+    background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  }
+
+  .surprise__text {
+    display: block;
+    padding-top: 80px;
+    padding-left: 420px;
+    padding-right: 109px;
+    text-align: left;
+  }
+}
+
+@media (min-width: (@desktop-width)) {
+  .surprise {
+    margin-top: 100px;
     margin-right: 100px;
   }
 
   .surprise--image {
     width: 245px;
-    height: 288px;
+    height: 289px;
     background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   }
-}
 
-@media (min-width: (@desktop-width)) {
+  .surprise__text {
+    display: block;
+    padding: 190px 46px;
+    text-align: center;
+  }
 
+  .surprise::after {
+    left: 96px;
+  }
 }
