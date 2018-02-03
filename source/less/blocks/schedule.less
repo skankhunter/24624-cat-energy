@@ -1,8 +1,9 @@
 .schedule {
   position: relative;
   background-color: @bg-lighter;
-  width: 280px;
+  max-width: 280px;
   min-height: 266px;
+  padding: 0 20px;
 }
 
 .schedule-loss {
@@ -14,10 +15,8 @@
   font-size: 14px;
   line-height: 18px;
   color: @grey-light;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 28px;
-  margin-bottom: 27px;
+  margin-top: 18px;
+  margin-bottom: 22px;
 }
 
 .schedule__link {
@@ -25,14 +24,14 @@
   font-family: "oswaldregular", serif;
   text-decoration: none;
   color: @black-darker;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 3px;
 }
 
 .schedule__text {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-left: 19px;
-
 }
 
 .schedule__title {
@@ -40,9 +39,10 @@
   line-height: 37px;
   font-weight: 500;
   text-transform: uppercase;
-  padding-left: 91px;
+  padding-left: 71px;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 30px;
+  padding-bottom: 11px;
 }
 
 .schedule__arrow {
@@ -50,18 +50,9 @@
   width: 23px;
   height: 14px;
   margin-top: 19px;
-  margin-left: 14px;
+  margin-left: 12px;
 }
 
-.schedule__link:after {
-  position: absolute;
-  content: '';
-  bottom: 60px;
-  width: 244px;
-  height: 1px;
-  background: #d9d9d9;
-  margin-left: 20px;
-}
 
 .schedule-loss:before {
   content: '';
@@ -79,10 +70,10 @@
   position: absolute;
   background-color: @green;
   border-radius: 50%;
-  top: 23px;
+  top: 24px;
   left: 22px;
   width: 50px;
-  height: 53px;
+  height: 50px;
   z-index: 1;
 }
 
@@ -102,17 +93,20 @@
   position: absolute;
   background-color: @green;
   border-radius: 50%;
-  top: 23px;
+  top: 24px;
   left: 22px;
   width: 50px;
-  height: 53px;
+  height: 50px;
   z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
   .schedule {
-    width: 708px;
-    min-height: 367px;
+    max-width: none;
+    margin: auto;
+    min-height: 372px;
+    box-sizing: border-box;
+    padding: 0 34px;
   }
 
   .schedule-loss {
@@ -122,31 +116,33 @@
   .schedule__description {
     font-size: 16px;
     line-height: 24px;
-    padding-left: 56px;
-    padding-right: 280px;
+    padding-left: 19px;
+    width: 385px;
+    min-height: 96px;
     margin-bottom: 42px;
+
   }
 
-  .schedule__description:nth-child(2) {
-    padding-right: 312px;
-  }
 
   .schedule__text {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 56px;
+    margin-top: 9px;
+    padding-left: 18px;
 
   }
 
   .schedule__title {
     font-size: 36px;
-    padding-left: 56px;
+    padding-left: 19px;
     padding-top: 77px;
+    padding-bottom: 8px;
     font-weight: 700;
   }
 
   .schedule__arrow {
-    margin-top: 26px;
+    margin-top: 15px;
+    margin-left: 24px;
   }
 
   .schedule__link:after {
@@ -182,7 +178,7 @@
     background: url("../img/icon-cat-pro.svg") no-repeat;
     top: 135px;
     left: 412px;
-    width: 275px;
+    width: 269px;
     height: 116px;
     z-index: 2;
   }
@@ -192,8 +188,8 @@
     position: absolute;
     background-color: @green;
     border-radius: 50%;
-    top: 94px;
-    left: 446px;
+    top: 92px;
+    left: 447px;
     width: 200px;
     height: 200px;
     z-index: 1;
