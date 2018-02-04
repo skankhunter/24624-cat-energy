@@ -8,37 +8,37 @@
 </head>
     <body>
         <header class="header">
-            <div class="header__wrap">
+            <div class="header__wrap wrapper">
                 <div class="logo nav__logo">
                     <a class="logo__link" href="#">
-                        <img class="logo__image logo__image--cat" src="../img/icon-logo-mobile.svg"  alt="CatEnergy">
+                        <img class="logo__image logo__image--cat" src="/img/icon-logo-mobile.svg" width="36" height="40"  alt="CatEnergy">
                     </a>
                     <a class="logo__link" href="#">
-                        <img class="logo__image logo__image--text" src="../img/logo-mobile-header.svg"  alt="CatEnergy">
+                        <img class="logo__image logo__image--text" src="../img/logo-mobile-header.svg" width="101" height="18" alt="CatEnergy">
                     </a>
                 </div>
-              <nav class="nav nav--closed nav--nojs">
-                  <button type="button" class="nav__toggle">
-                      <span class="visually-hidden">Открыть меню</span>
-                  </button>
-                  <ul class="nav__list site-list site-list__link--form">
-                      <li class="site-list__item">
-                          <a class="site-list__link site-list__link--form" href="index.html">Главная</a>
-                      </li>
-                      <li class="site-list__item">
-                          <a class="site-list__link site-list__link--form site-list__item--active-form" href="catalog.html">Каталог продукции</a>
-                      </li>
-                      <li class="site-list__item">
-                          <a class="site-list__link site-list__link--form" href="form.html">Подбор программы</a>
-                      </li>
-                  </ul>
+                <nav class="nav nav--closed nav--nojs">
+                    <button type="button" class="nav__toggle">
+                       <span class="visually-hidden">Открыть меню</span>
+                    </button>
+                    <ul class="nav__list site-list">
+                        <li class="site-list__item ">
+                            <a class="site-list__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link site-list__item--active" href="catalog.html">Каталог продукции</a>
+                        </li>
+                        <li class="site-list__item">
+                           <a class="site-list__link" href="form.html">Подбор программы</a>
+                        </li>
+                    </ul>
               </nav>
-            </div>
+          </div>
         </header>
         <main class="main">
             <section class="market">
                 <h2 class="market__title">Каталог продукции</h2>
-                <div class="market__wrap">
+                <div class="market__wrap wrapper">
                     <div class="market__goods card">
                         <div class="card__wrap">
                             <a class="card__link" href="#">
@@ -208,90 +208,86 @@
                       <a class="btn btn--order" href="">Заказать</a>
                     </div>
                   <div class="market__goods card">
-                      <div class="card__all-products-wrap">
-                          <a class="card__all-products__plus" href="#"></a>
-                          <b class="card__all-products__title">Показать еще 100500 товаров</b>
-                          <p class="card__all-products__subtitle">На самом деле вкусов гораздо больше!</p>
+                      <div class="card__all-products-wrap all-products">
+                          <a class="all-products__plus" href="#"></a>
+                          <b class="all-products__title">Показать еще 100500 товаров</b>
+                          <p class="all-products__subtitle">На самом деле вкусов гораздо больше!</p>
                           <a class="btn btn--to-all" href="#">Показать всё</a>
                       </div>
                   </div>
                 </div>
             </section>
-            <section class="all-products">
-                <div class="all-products__wrap">
-                    <a class="all-products__plus" href="#"></a>
-                    <b class="all-products__title">Показать еще 100500 товаров</b>
-                    <p class="all-products__subtitle">На самом деле вкусов гораздо больше!</p>
-                    <a class="btn btn--to-all" href="#">Показать всё</a>
-                </div>
-            </section>
             <section class="another">
                 <div class="another__wrap">
                     <h2 class="another__title">Дополнительные товары</h2>
-                    <div class="another__item product">
-                        <div class="product__wrap">
-                            <h3 class="product__title">Сахарозаменитель</h3>
-                            <div class="product__text-wrap">
-                                <p class="product__text product__text--left">1 Упаковка (100 г)</p>
-                                <p class="product__text">200 Р</p>
-                          </div>
-                        </div>
-                        <a class="btn btn--order" href="">Заказать</a>
-                    </div>
-                    <div class="another__item product">
-                        <div class="product__wrap">
-                            <h3 class="product__title ">Питьевая вода</h3>
-                            <div class="product__text-wrap ">
-                                <p class="product__text product__text--left">5 литров</p>
-                                <p class="product__text">50 Р</p>
+                    <div class="another__item-wrap">
+                        <div class="another__item product product--pseudo">
+                            <div class="product__wrap">
+                                <h3 class="product__title">Сахарозаменитель</h3>
+                                <div class="product__text-wrap">
+                                    <p class="product__text product__text--left">1 Упаковка (100 г)</p>
+                                    <p class="product__text">200 Р</p>
+                              </div>
                             </div>
+                            <a class="btn btn--order" href="">Заказать</a>
                         </div>
-                        <a class="btn btn--order" href="">Заказать</a>
-                    </div>
-                    <div class="another__item product">
-                        <div class="product__wrap">
-                            <h3 class="product__title">Молоко</h3>
-                            <div class="product__text-wrap">
-                                <p class="product__text product__text--left">1 литр</p>
-                                <p class="product__text">100 Р</p>
+                        <div class="another__item product product--pseudo">
+                            <div class="product__wrap">
+                                <h3 class="product__title ">Питьевая вода</h3>
+                                <div class="product__text-wrap ">
+                                    <p class="product__text product__text--left">5 литров</p>
+                                    <p class="product__text">50 Р</p>
+                                </div>
                             </div>
+                            <a class="btn btn--order" href="">Заказать</a>
                         </div>
-                        <a class="btn btn--order" href="">Заказать</a>
-                    </div>
-                    <div class="another__item product">
-                        <div class="product__wrap">
-                            <h3 class="product__title">Витамины</h3>
-                            <div class="product__text-wrap">
-                                <p class="product__text product__text--left">1 упаковка (30 г)</p>
-                                <p class="product__text">300 Р</p>
-                          </div>
+                        <div class="another__item product product--pseudo">
+                            <div class="product__wrap">
+                                <h3 class="product__title">Молоко</h3>
+                                <div class="product__text-wrap">
+                                    <p class="product__text product__text--left">1 литр</p>
+                                    <p class="product__text">100 Р</p>
+                                </div>
+                            </div>
+                            <a class="btn btn--order" href="">Заказать</a>
                         </div>
-                        <a class="btn btn--order" href="">Заказать</a>
+                        <div class="another__item product">
+                            <div class="product__wrap">
+                                <h3 class="product__title">Витамины</h3>
+                                <div class="product__text-wrap">
+                                    <p class="product__text product__text--left">1 упаковка (30 г)</p>
+                                    <p class="product__text">300 Р</p>
+                              </div>
+                            </div>
+                            <a class="btn btn--order" href="">Заказать</a>
+                        </div>
                     </div>
                 </div>
               <div class="surprise surprise--image">
                 <p class="surprise__text">Закажите все и получите чехол для кота в подарок!</p>
               </div>
             </section>
-
         </main>
         <footer class="footer">
-            <div class="footer__wrap">
-                <div class="footer__contacts contacts contacts--form">
-                    <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-                    <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="footer__map">
+                <div class="footer__wrap">
+                    <div class="wrapper">
+                        <div class="footer__contacts contacts footer__contacts--index">
+                            <p class="contacts__title">приглашаем <br>к сотрудничеству дилеров!</p>
+                            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text-inner">Санкт-Петербург</span></p>
+                        </div>
+                  </div>
                 </div>
-                <div class="footer__map">
-                    <iframe class="footer__map-int" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124025!2d30.32089461618791!3d59.93879686904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516614301500"  frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="footer__social-wrap">
-                    <a class="footer__logo logo logo__text" href="#">
-                      <img class="logo__image text-image" src="../img/logo-footer.svg"  alt="CatEnergy">
-                    </a>
-                    <ul class="social social__list">
-                        <li class="social__item">
-                            <a class="social__link" href="vk.com">
-                                <svg class="social__link-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" width="22" height="12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                <iframe class="footer__map-int" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124025!2d30.32089461618791!3d59.93879686904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516614301500"  frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="footer__social-wrap">
+                <a class="footer__logo logo logo__text" href="#">
+                    <img class="logo__image text-image" src="../img/logo-footer.svg" width="128" height="24"  alt="CatEnergy">
+                </a>
+                <ul class="social social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="vk.com">
+                            <svg class="social__link-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" width="22" height="12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
                                                         <g>
                                                             <path
                                                               d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -310,54 +306,53 @@
                                                             c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
                                                             c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/>
                                                         </g>
-                                </svg>
-                          </a>
-                        </li>
-                        <li class="social__item">
-                          <a class="social__link" href="instagram.com">
-                            <svg class="social__link-inst" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" width="16" height="16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-                                                      <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
-                                                      L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
-                                                      <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
-                                                      C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/>
-                                                      <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
-                                        </svg>
-                          </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link" href="fb.com">
-                               <svg class="social__link-fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" width="10" height="19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
-                                                    <g>
-                                                        <path
-                                                          d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
-                                                          M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
-                                                        H1.1v2.3h2V18z"/>
-                                                    </g>
-                               </svg>
-                          </a>
-                        </li>
-                    </ul>
-                    <div class="footer__copyright copyright">
-                        <p class="copyright__title">HTML Academy</p>
-                        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                            <svg class="copyright__link-logo"
-                                                    version="1.0"
-                                                    id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="26.943px"
-                                                    height="34.09px"
-                                                    viewBox="0 0 26.943 34.09"
-                                                    enable-background="new 0 0 26.943 34.09"
-                                                    xml:space="preserve"
-                                                    fill="#666666">
-                                                    <path
-                                                      d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
                             </svg>
-                      </a>
-                    </div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="instagram.com">
+                            <svg class="social__link-inst" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" width="16" height="16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                                                        <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
+                                                        L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
+                                                        <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
+                                                        C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/>
+                                                        <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="fb.com">
+                            <svg class="social__link-fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" width="10" height="19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                                                        <g>
+                                                            <path
+                                                              d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
+                                                              M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
+                                                            H1.1v2.3h2V18z"/>
+                                                        </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copyright copyright wrapper">
+                    <p class="copyright__title">HTML Academy</p>
+                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                        <svg class="copyright__link-logo"
+                                                        version="1.0"
+                                                        id="Layer_1"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                        x="0px"
+                                                        y="0px"
+                                                        width="26.943px"
+                                                        height="34.09px"
+                                                        viewBox="0 0 26.943 34.09"
+                                                        enable-background="new 0 0 26.943 34.09"
+                                                        xml:space="preserve"
+                                                        fill="#666666">
+                                                        <path
+                                                          d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </footer>

@@ -37,36 +37,51 @@
 
 .another__item:last-child {
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: 0;
+  padding-bottom: 17px;
 }
 
 @media (min-width: (@tablet-width)) {
   .another {
     width: 768px;
+    margin-bottom: 80px;
   }
 
   .another__wrap {
-    width: 632px;
+    width: 708px;
     margin: 0 auto;
+  }
+
+  .another__item-wrap {
+    width: 630px;
+    margin: 0 auto;
+    padding: 27px 40px;
+    border: 1px solid #e6e6e6;
+    margin-top: 82px;
+    padding-top: 23px;
   }
 
   .another__title {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px;
   }
 
   .another__item {
     border: none;
     position: relative;
+    padding: 0;
+    margin-bottom: 52px;
   }
 
   .another__item:last-child {
     border: none;
+    margin: 0;
+    padding: 0;
   }
 
   .another__item::before {
     position: absolute;
-    content: '';
+    content: none;
     top: 0;
     left: -30px;
     width: 708px;
@@ -77,9 +92,9 @@
   .another__title::before {
     position: absolute;
     content: '';
-    top: 17px;
-    left: -70px;
-    width: 30px;
+    top: 23px;
+    left: -27px;
+    width: 28px;
     height: 3px;
     background-color: @green;
   }
@@ -87,9 +102,9 @@
   .another__title::after {
     position: absolute;
     content: '';
-    top: 17px;
-    right: -70px;
-    width: 330px;
+    top: 23px;
+    right: -30px;
+    width: 326px;
     height: 3px;
     background-color: @green;
   }
@@ -100,24 +115,41 @@
     width: 1440px;
     display: flex;
     justify-content: space-between;
+    margin-top: -156px;
+    margin-bottom: 86px;
   }
 
   .another__wrap {
     width: 895px;
-    margin-left: 100px;
+    margin: 0 auto;
+    margin-right: -33px;
   }
 
   .another__item {
     display: flex;
     justify-content: space-between;
-    padding-top: 19px;
+    padding-top: 7px;
     padding-bottom: 0;
+    margin-bottom: 12px;
+  }
+
+  .another__item:last-child {
+    padding-top: 7px;
+  }
+
+  .another__item-wrap {
+    width: 895px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    margin-top: 82px;
   }
 
   .another__item .btn {
     display: block;
     width: 245px;
-    margin: 0;
+    margin-top: 7px;
+    margin-right: 2px;
   }
 
   .another__item::before {
@@ -130,11 +162,15 @@
     background-color: #e6e6e6;
   }
 
+  .another__title {
+    padding: 0;
+  }
+
   .another__title::before {
     position: absolute;
     content: '';
-    top: 17px;
-    left: -100px;
+    top: 22px;
+    left: -110px;
     width: 70px;
     height: 3px;
     background-color: @green;
@@ -143,8 +179,8 @@
   .another__title::after {
     position: absolute;
     content: '';
-    top: 17px;
-    right: -480px;
+    top: 22px;
+    right: -436px;
     width: 960px;
     height: 3px;
     background-color: @green;

@@ -36,7 +36,8 @@
   .product__text-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin: 0;
+    padding-top: 5px;
   }
 
   .product__text {
@@ -45,6 +46,20 @@
   }
   .product__text--left {
     margin-right: 52px;
+  }
+
+  .product--pseudo {
+    position: relative;
+  }
+
+  .product--pseudo::after {
+    position: absolute;
+    content: '';
+    width: 710px;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: -28px;
+    left: -40px;
   }
 }
 
@@ -57,5 +72,9 @@
 
   .product__text-wrap {
     min-width: 285px;
+  }
+
+  .product--pseudo::after {
+    content: none;
   }
 }
