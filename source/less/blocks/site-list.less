@@ -18,7 +18,7 @@
   padding-bottom: 19px;
 }
 
-.site-list  .site-list__link:last-child {
+.site-list .site-list__link:last-child {
   padding-bottom: 10px;
 }
 
@@ -40,6 +40,7 @@
 
   .site-list__item {
     margin-right: 35px;
+
     &:last-child {
       margin-right: 0;
     }
@@ -105,8 +106,8 @@
     position: relative;
   }
 
-  .site-list__item--active:after {
-    content: '';
+  .site-list__item--active::after {
+    content: "";
     position: absolute;
     width: 100%;
     top: 60px;
