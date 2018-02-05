@@ -43,10 +43,10 @@
   position: relative;
 }
 
-.advantages__item--leaf:before {
+.advantages__item--leaf::before {
   content: '';
   position: absolute;
-  background: url("../img/advantage-leaf@1x.png") no-repeat;
+  background: url('../img/advantage-leaf@1x.png') no-repeat;
   top: 3px;
   left: 5px;
   width: 40px;
@@ -54,11 +54,11 @@
   z-index: 1;
 }
 
-.advantages__item--leaf:after,
-.advantages__item--water:after,
-.advantages__item--knife:after,
-.advantages__item--clock:after {
-  content: '';
+.advantages__item--leaf::after,
+.advantages__item--water::after,
+.advantages__item--knife::after,
+.advantages__item--clock::after {
+  content: "";
   position: absolute;
   background-color: @green;
   top: -2px;
@@ -68,18 +68,14 @@
   z-index: 0;
 }
 
-.advantages__item--water:after {
-
-}
-
 .advantages__item--water {
   position: relative;
 }
 
-.advantages__item--water:before {
-  content: '';
+.advantages__item--water::before {
+  content: "";
   position: absolute;
-  background: url("../img/advantage-powder@1x.png") no-repeat;
+  background: url('../img/advantage-powder@1x.png') no-repeat;
   top: 2px;
   left: 5px;
   width: 40px;
@@ -87,15 +83,14 @@
   z-index: 1;
 }
 
-
 .advantages__item--knife {
   position: relative;
 }
 
-.advantages__item--knife:before {
-  content: '';
+.advantages__item--knife::before {
+  content: "";
   position: absolute;
-  background: url("../img/advantage-dining@1x.png") no-repeat;
+  background: url('../img/advantage-dining@1x.png') no-repeat;
   top: 3px;
   left: 4px;
   width: 40px;
@@ -103,22 +98,20 @@
   z-index: 1;
 }
 
-
 .advantages__item--clock {
   position: relative;
 }
 
-.advantages__item--clock:before {
-  content: '';
+.advantages__item--clock::before {
+  content: "";
   position: absolute;
-  background: url("../img/advantage-clock@1x.png") no-repeat;
+  background: url('../img/advantage-clock@1x.png') no-repeat;
   top: 3px;
   left: 5px;
   width: 40px;
   height: 40px;
   z-index: 1;
 }
-
 
 @media (min-width: @tablet-width) {
   .advantages {
@@ -188,10 +181,10 @@
     padding-left: 0;
     padding-right: 75px;
   }
-  .advantages__item--leaf:before {
-    content: '';
+  .advantages__item--leaf::before {
+    content: "";
     position: absolute;
-    background: url("../img/advantage-leaf@1x.png") no-repeat;
+    background: url('../img/advantage-leaf@1x.png') no-repeat;
     top: 15px;
     left: 18px;
     width: 40px;
@@ -199,8 +192,8 @@
     z-index: 1;
   }
 
-  .advantages__item--leaf:after {
-    content: '';
+  .advantages__item--leaf::after {
+    content: "";
     position: absolute;
     background-color: @green;
     top: 0;
@@ -214,10 +207,10 @@
     position: relative;
   }
 
-  .advantages__item--water:before {
-    content: '';
+  .advantages__item--water::before {
+    content: "";
     position: absolute;
-    background: url("../img/advantage-powder@1x.png") no-repeat;
+    background: url('../img/advantage-powder@1x.png') no-repeat;
     top: 15px;
     left: 18px;
     width: 80px;
@@ -225,8 +218,8 @@
     z-index: 1;
   }
 
-  .advantages__item--water:after {
-    content: '';
+  .advantages__item--water::after {
+    content: "";
     position: absolute;
     background-color: @green;
     top: 0;
@@ -240,10 +233,10 @@
     position: relative;
   }
 
-  .advantages__item--knife:before {
-    content: '';
+  .advantages__item--knife::before {
+    content: "";
     position: absolute;
-    background: url("../img/advantage-dining@1x.png") no-repeat;
+    background: url('../img/advantage-dining@1x.png') no-repeat;
     top: 15px;
     left: 17px;
     width: 40px;
@@ -251,8 +244,8 @@
     z-index: 1;
   }
 
-  .advantages__item--knife:after {
-    content: '';
+  .advantages__item--knife::after {
+    content: "";
     position: absolute;
     background-color: @green;
     top: 0;
@@ -266,10 +259,10 @@
     position: relative;
   }
 
-  .advantages__item--clock:before {
-    content: '';
+  .advantages__item--clock::before {
+    content: "";
     position: absolute;
-    background: url("../img/advantage-clock@1x.png") no-repeat;
+    background: url('../img/advantage-clock@1x.png') no-repeat;
     top: 15px;
     left: 17px;
     width: 40px;
@@ -277,8 +270,8 @@
     z-index: 1;
   }
 
-  .advantages__item--clock:after {
-    content: '';
+  .advantages__item--clock::after {
+    content: "";
     position: absolute;
     background-color: @green;
     top: 0;
@@ -337,10 +330,10 @@
     padding-right: 0px;
   }
 
-  .advantages__item--leaf:before,
-  .advantages__item--water:before,
-  .advantages__item--knife:before,
-  .advantages__item--clock:before {
+  .advantages__item--leaf::before,
+  .advantages__item--water::before,
+  .advantages__item--knife::before,
+  .advantages__item--clock::before {
     left: 15px;
   }
 

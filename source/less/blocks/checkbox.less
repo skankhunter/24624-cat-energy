@@ -20,7 +20,8 @@
   cursor: pointer;
 }
 
-.checkbox__indicator, label {
+.checkbox__indicator,
+label {
   display: inline-block;
   vertical-align: middle;
 }
@@ -36,6 +37,7 @@
   background: url("../img/icon-tick.svg") no-repeat;
   fill: @green;
 }
+
 .checkbox__indicator,
 .checkbox:checked + .checkbox__indicator::before {
     margin-right: 12px;
@@ -45,7 +47,6 @@
   .checkbox {
     font-size: 20px;
     line-height: 20px;
-
   }
 
   .checkbox:last-child{
