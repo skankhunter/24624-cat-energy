@@ -1,13 +1,14 @@
 .owner {
   position: relative;
   margin-bottom: 29px;
+  padding: 0 20px;
 }
 
 .owner::before {
   content: '';
   position: absolute;
   top: -69px;
-  right: -19px;
+  right: 0;
   width: 99px;
   height: 3px;
   background-color: @green;
@@ -17,27 +18,30 @@
   content: '';
   position: absolute;
   bottom: -45px;
-  right: -19px;
+  right: 0;
   width: 158px;
   height: 3px;
   background-color: @green;
 }
 
 .owner__item {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .owner__item:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-
-
 @media (min-width: @tablet-width) {
+  .owner {
+    padding: 0 40px;
+    margin-bottom: 63px;
+  }
+
   .owner::before {
     content: '';
     position: absolute;
-    top: -88px;
+    top: -90px;
     right: -30px;
     width: 145px;
     height: 3px;
@@ -47,8 +51,8 @@
   .owner::after {
     content: '';
     position: absolute;
-    bottom: -96px;
-    right: -30px;
+    bottom: -87px;
+    right: -31px;
     width: 480px;
     height: 3px;
     background-color: @green;
@@ -59,14 +63,16 @@
   .owner {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin-bottom: 49px;
   }
 
   .owner::before {
     content: '';
     position: absolute;
-    top: -88px;
-    right: -120px;
-    width: 775px;
+    top: -89px;
+    right: -110px;
+    width: 777px;
     height: 3px;
     background-color: @green;
   }
@@ -74,14 +80,14 @@
   .owner::after {
     content: '';
     position: absolute;
-    bottom: -96px;
-    right: -120px;
+    bottom: -74px;
+    right: -111px;
     width: 1112px;
     height: 3px;
     background-color: @green;
   }
 
   .owner__item {
-    width: 45%;
+    width: 47%;
   }
 }

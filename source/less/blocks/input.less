@@ -14,9 +14,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @grey-light;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 15px;
+  padding: 12px 15px;
+  padding-right: 25px;
   margin-left: 15px;
   border: 1px solid #e7e7e7;
 }
@@ -59,22 +58,40 @@
 
   .input__text {
     font-size: 20px;
+    padding-right: 40px;
     line-height: 20px;
+    margin-left: 20px;
   }
 
   .input__pic--letter {
     top: 19px;
-    right: 20px;
+    right: 16px;
   }
 
   .input__pic--tel {
-    top: 16px;
-    right: 16px;
+    top: 18px;
+    right: 14px;
+  }
+
+  .input__text--email {
+    padding-left: 20px;
   }
 
 
 }
 
 @media (min-width: @desktop-width) {
+  .input__text--email {
+    padding-left: 20px;
+  }
 
+  .input__pic--letter {
+    top: 20px;
+    right: 22px;
+  }
+
+  .input__pic--tel {
+    top: 18px;
+    right: 19px;
+  }
 }
