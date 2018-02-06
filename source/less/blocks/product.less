@@ -11,7 +11,7 @@
 .product__text-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .product__text {
@@ -20,6 +20,14 @@
   line-height: 14px;
   color: @grey-light;
   margin: 0;
+}
+
+.product__text--left {
+  padding-right: 10px;
+}
+
+.product__text--right {
+  padding-left: 10px;
 }
 
 @media (min-width: (@tablet-width)) {

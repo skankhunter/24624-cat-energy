@@ -15,8 +15,8 @@
   display: flex;
   justify-content: space-between;
   width: 199px;
-  padding-top: 14px;
-  margin-bottom: 5px;
+  padding-top: 9px;
+
 }
 
 .nav__toggle {
@@ -36,12 +36,11 @@
 .nav--closed .nav__toggle::before {
   position: absolute;
   content: "";
-  top: 2px;
+  top: 22px;
   right: 20px;
   width: 24px;
   height: 19px;
   background: url("../img/icon-mobile-menu.svg") no-repeat;
-  margin-top: 20px;
 }
 
 .nav--opened .nav__toggle::before {
@@ -57,7 +56,7 @@
 
 @media (max-width: @mobile-width-only) {
   .nav__logo {
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   .nav--closed .site-list__item {

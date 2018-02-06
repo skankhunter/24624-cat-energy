@@ -87,10 +87,21 @@
   }
 
   .slider__toggles-text {
+    position: relative;
     font-size: 20px;
     line-height: 20px;
-    border-bottom: 1px dotted #bebebe;
+    border: none;
     padding: 0;
+  }
+
+  .slider__toggles-text::after {
+    position: absolute;
+    content: "";
+    width: 49px;
+    height: 1px;
+    bottom: -6px;
+    left: 0;
+    border-bottom: 1px dotted #bebebe;
   }
 
   .slider__toggles-text--before {
@@ -119,6 +130,7 @@
   .slider__list {
     margin-top: -53px;
     margin-bottom: 121px;
+    padding-left: 40px;
   }
 
   .slider__list::after {
@@ -136,7 +148,6 @@
   }
 
   .slider__toggles-text {
-    border-bottom: 1px dotted #bebebe;
     padding: 0;
   }
 

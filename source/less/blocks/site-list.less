@@ -22,7 +22,6 @@
   padding-bottom: 10px;
 }
 
-
 .site-list__link::before {
   position: absolute;
   content: "";
@@ -69,6 +68,19 @@
   }
 
   .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    border-bottom: 2px solid @green;
+  }
+
+  .site-list__item--active-index {
+    position: relative;
+  }
+
+  .site-list__item--active-index::after {
     content: "";
     position: absolute;
     width: 100%;
