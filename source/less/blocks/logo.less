@@ -14,12 +14,23 @@
 
 @media (min-width: @tablet-width) {
   .logo__image--cat {
-    background: url("../img/logo-tablet.png") no-repeat;
-    width: 174px;
-    height: 58px;
+   display: none;
   }
 
   .logo__image--text {
-    display: none;
+    width: 173px;
+    height: 58px;
+    margin-left: 0;
+    margin-right: 23px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .logo__image--text {
+    width: 204px;
+    height: 59px;
+    margin-left: 0;
+    margin-right: 23px;
+  }
+}
+

@@ -18,12 +18,16 @@
 
 .surprise--image {
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .surprise__text {
   color: @bg-white;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 19px;
   font-family: "Arial", serif;
   text-align: center;
   margin: 0;
@@ -44,13 +48,18 @@
   .surprise--image {
     width: 708px;
     height: 200px;
-    background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 
   .surprise__text {
     display: block;
-    padding-top: 80px;
-    padding-left: 420px;
+    padding-top: 71px;
+    padding-left: 423px;
     padding-right: 109px;
     text-align: left;
   }
@@ -65,7 +74,12 @@
   .surprise--image {
     width: 245px;
     height: 289px;
-    background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("./img/gift-photo-desktop@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 
   .surprise__text {
