@@ -1,0 +1,54 @@
+.range-controls__scale {
+  width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 3px;
+}
+
+.range-controls__toggle {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 105px;
+  width: 35px;
+  height: 6px;
+  background-color: @green;
+  border-radius: 8px;
+}
+
+@media (min-width: @tablet-width) {
+  .range-controls__scale {
+    position: absolute;
+    top: 4px;
+    left: 138px;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  .range-controls__toggle {
+    position: absolute;
+    top: -5px;
+    left: 338px;
+    border: 12px solid #ffffff;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px grey;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-controls__scale {
+    left: 108px;
+  }
+
+  .range-controls__toggle {
+    left: 310px;
+  }
+}

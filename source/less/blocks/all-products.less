@@ -1,9 +1,44 @@
+.all-products {
+  position: relative;
+  margin: 0 auto;
+  padding: 27px 0;
+}
+
+.all-products::after {
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.all-products__wrap {
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+.all-products__plus {
+  display: block;
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  cursor: pointer;
+}
+
 .all-products__title {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: "oswaldmedium", serif;
+  font-family: "oswaldregular", serif;
   color: @black-darker;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .all-products__subtitle {
@@ -11,4 +46,63 @@
   line-height: 16px;
   font-family: "Arial", serif;
   color: @grey-light;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 22px;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .all-products {
+    padding: 27px 42px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .all-products__plus {
+    display: block;
+    background: url("../img/icon-plus-mobile.svg") no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 27px;
+    cursor: pointer;
+  }
+
+  .all-products__title {
+    display: block;
+    font-size: 19px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: "oswaldmedium", serif;
+    color: @black-darker;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 27px;
+    margin-right: -9px;
+  }
+
+  .all-products__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Arial", serif;
+    color: @grey-light;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 88px;
+  }
+
+  .card .btn {
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .all-products {
+    padding: 27px 0;
+  }
 }

@@ -1,0 +1,46 @@
+header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header__wrap {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.header__wrap::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  bottom: -8px;
+  left: 0;
+  background: #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  header {
+    width: 768px;
+  }
+
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    margin: auto;
+  }
+
+  .header__wrap::after {
+    content: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  header {
+    width: 1440px;
+  }
+
+  .header__wrap {
+    padding-top: 46px;
+  }
+}

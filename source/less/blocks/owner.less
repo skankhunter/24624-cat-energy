@@ -1,0 +1,89 @@
+.owner {
+  position: relative;
+  margin-bottom: 29px;
+  padding: 0 20px;
+}
+
+.owner::before {
+  content: "";
+  position: absolute;
+  top: -69px;
+  right: -381px;
+  width: 150%;
+  height: 3px;
+  background-color: @green;
+}
+
+.owner::after {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  right: -322px;
+  width: 150%;
+  height: 3px;
+  background-color: @green;
+}
+
+.owner__item {
+  padding-bottom: 15px;
+}
+
+.owner__item:last-child {
+  padding-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .owner {
+    padding: 0 40px;
+    margin-bottom: 63px;
+  }
+
+  .owner::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -946px;
+    height: 3px;
+    background-color: @green;
+  }
+
+  .owner::after {
+    content: "";
+    position: absolute;
+    bottom: -87px;
+    right: -612px;
+    height: 3px;
+    background-color: @green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 49px;
+  }
+
+  .owner::before {
+    content: "";
+    position: absolute;
+    top: -89px;
+    right: -1162px;
+    height: 3px;
+    background-color: @green;
+  }
+
+  .owner::after {
+    content: "";
+    position: absolute;
+    bottom: -74px;
+    right: -828px;
+    height: 3px;
+    background-color: @green;
+  }
+
+  .owner__item {
+    width: 47%;
+  }
+}

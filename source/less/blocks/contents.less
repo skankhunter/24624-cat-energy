@@ -1,6 +1,66 @@
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contents__text {
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial", serif;
   color: @grey-light;
+  margin: 0;
+}
+
+.contents__text--label {
+  padding-right: 10px;
+}
+
+.contents__text--value {
+  padding-left: 10px;
+}
+
+.contents__value {
+  text-align: right;
+}
+
+@media (min-width: @tablet-width) {
+  .contents__text {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 17px;
+  }
+
+  .contents__text:last-child {
+    margin-bottom: 0;
+  }
+
+  .contents__text--label {
+    position: relative;
+  }
+
+  .contents__text--label::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 0;
+    width: 249px;
+    height: 1px;
+    background-color: #cdcdcd;
+  }
+
+  .contents__text--value {
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contents__text--label::after {
+    position: absolute;
+    content: "";
+    bottom: 9px;
+    left: 0;
+    width: 170px;
+    height: 1px;
+    background-color: #cdcdcd;
+  }
 }

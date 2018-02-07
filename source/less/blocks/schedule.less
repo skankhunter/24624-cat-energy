@@ -1,5 +1,12 @@
 .schedule {
+  position: relative;
   background-color: @bg-lighter;
+  max-width: 280px;
+  padding: 9px 20px;
+}
+
+.schedule-loss {
+  margin-bottom: 20px;
 }
 
 .schedule__description {
@@ -7,12 +14,17 @@
   font-size: 14px;
   line-height: 18px;
   color: @grey-light;
+  margin-top: 18px;
+  margin-bottom: 22px;
 }
 
 .schedule__link {
-  font-family: "oswaldmedium", serif;
+  display: flex;
+  font-family: "oswaldregular", serif;
   text-decoration: none;
   color: @black-darker;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 3px;
 }
 
 .schedule__text {
@@ -24,6 +36,250 @@
 .schedule__title {
   font-size: 24px;
   line-height: 37px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
+  padding-left: 71px;
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 12px;
+}
+
+.schedule__arrow {
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  width: 23px;
+  height: 14px;
+  margin-top: 19px;
+  margin-left: 12px;
+}
+
+
+.schedule-loss::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-cat-slim.svg") no-repeat;
+  top: 21px;
+  left: 29px;
+  width: 49px;
+  height: 51px;
+  z-index: 2;
+}
+
+.schedule-loss::after {
+  content: "";
+  position: absolute;
+  background-color: @green;
+  border-radius: 50%;
+  top: 24px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.schedule-weight::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-cat-pro.svg") no-repeat;
+  top: 35px;
+  left: 14px;
+  width: 67px;
+  height: 50px;
+  z-index: 2;
+}
+
+.schedule-weight::after {
+  content: "";
+  position: absolute;
+  background-color: @green;
+  border-radius: 50%;
+  top: 24px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .schedule {
+    max-width: none;
+    margin: auto;
+    min-height: 372px;
+    box-sizing: border-box;
+    padding: 17px 34px;
+  }
+
+  .schedule-loss {
+    margin-bottom: 30px;
+  }
+
+  .schedule__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 19px;
+    width: 372px;
+    min-height: 96px;
+    margin-bottom: 42px;
+  }
+
+  .schedule__text {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 9px;
+    padding-left: 18px;
+  }
+
+  .schedule__title {
+    font-size: 36px;
+    padding-left: 19px;
+    padding-top: 60px;
+    padding-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .schedule__link {
+    border: none;
+    padding-top: 4px;
+  }
+
+  .schedule__arrow {
+    margin-top: 15px;
+    margin-left: 24px;
+  }
+
+  .schedule__link::after {
+    display: none;
+  }
+
+  .schedule-loss::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    top: 81px;
+    left: 476px;
+    width: 140px;
+    height: 194px;
+    z-index: 2;
+  }
+
+  .schedule-loss::after {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 94px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+
+  .schedule-weight::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    top: 135px;
+    left: 412px;
+    width: 269px;
+    height: 116px;
+    z-index: 2;
+  }
+
+  .schedule-weight::after {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 92px;
+    left: 447px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .schedule {
+    width: 570px;
+    min-height: 371px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 15px 52px;
+  }
+
+  .schedule:last-child {
+    margin-right: 0;
+  }
+
+  .schedule__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 462px;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .schedule__text {
+    padding: 0;
+    margin-top: -12px;
+  }
+
+  .schedule__arrow {
+    margin-top: -8px;
+    margin-left: 24px;
+    width: 24px;
+    height: 15px;
+  }
+
+  .schedule__title {
+    padding-left: 161px;
+    padding-top: 62px;
+    margin-bottom: 66px;
+    font-weight: 700;
+  }
+
+  .schedule-loss::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    top: 42px;
+    left: 66px;
+    width: 71px;
+    height: 97px;
+    z-index: 2;
+  }
+
+  .schedule-loss::after {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  .schedule-weight::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    top: 70px;
+    left: 34px;
+    width: 134px;
+    height: 56px;
+    z-index: 2;
+  }
+
+  .schedule-weight::after {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    border-radius: 50%;
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
 }

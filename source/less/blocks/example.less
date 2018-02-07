@@ -1,22 +1,126 @@
+.example {
+  width: 320px;
+  margin: 0 auto;
+  background-color: @bg-lighter;
+  min-height: 725px;
+}
+
+.example__wrap {
+  margin: 0 auto;
+}
+
 .example__description {
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", serif;
   color: @grey-light;
+  padding-right: 13px;
 }
 
 .example__subtitle {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: "oswaldmedium", serif;
+  font-family: "oswaldregular", serif;
+  text-align: center;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 33px;
 }
 
 .example__title {
   font-size: 36px;
   line-height: 60px;
+  padding-top: 37px;
+  margin: 0;
+  padding-bottom: 9px;
 }
 
-.example__wrap {
-  background-color: @bg-lighter;
+@media (min-width: @tablet-width) {
+  .example {
+    position: relative;
+    width: 768px;
+    background-color: transparent;
+    min-height: 1085px;
+  }
+
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 32px;
+  }
+
+  .example__subtitle {
+    position: absolute;
+    top: 265px;
+    right: 30px;
+    font-size: 20px;
+    line-height: 29px;
+    width: 186px;
+    text-align: right;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 43px;
+    margin: 0;
+    padding-bottom: 48px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    position: relative;
+    width: 1440px;
+    min-height: 532px;
+  }
+
+  .example::after {
+    position: absolute;
+    content: "";
+    top: 69px;
+    left: 0;
+    width: 1440px;
+    min-height: 463px;
+    background-color: @bg-lighter;
+    z-index: -1;
+  }
+
+  .example__wrap {
+    display: flex;
+  }
+
+  .example__text-wrap {
+    width: 50%;
+  }
+
+  .example__description {
+    padding-right: 179px;
+    margin-bottom: 57px;
+  }
+
+  .example__subtitle {
+    position: unset;
+    width: 335px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .example__subtitle-inner {
+    margin-left: 60px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    margin: 0;
+    margin-top: -66px;
+    padding-bottom: 129px;
+    font-weight: 500;
+  }
 }

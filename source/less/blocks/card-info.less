@@ -2,4 +2,26 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  display: block;
+  padding-top: 22px;
+  padding-right: 42px;
+  padding-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .card-info__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 4px 45px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-info__title {
+    padding: 25px 19px;
+    padding-top: 45px;
+  }
 }

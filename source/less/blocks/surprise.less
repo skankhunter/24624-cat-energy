@@ -1,5 +1,80 @@
+.surprise {
+  position: relative;
+  width: 280px;
+  height: 289px;
+  margin: 0 auto;
+  margin-top: 39px;
+}
+
+.surprise::after {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-gift.svg") no-repeat;
+  top: 65px;
+  left: 113px;
+  width: 55px;
+  height: 60px;
+}
+
+.surprise--image {
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+}
+
 .surprise__text {
   color: @bg-white;
   font-size: 16px;
   line-height: 16px;
+  font-family: "Arial", serif;
+  text-align: center;
+  margin: 0;
+  padding: 190px 50px;
+  padding-bottom: 0;
+}
+
+@media (min-width: (@tablet-width)) {
+  .surprise {
+    margin: 0 auto;
+    margin-top: 69px;
+  }
+
+  .surprise::after {
+    left: 92px;
+  }
+
+  .surprise--image {
+    width: 708px;
+    height: 200px;
+    background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  }
+
+  .surprise__text {
+    display: block;
+    padding-top: 80px;
+    padding-left: 420px;
+    padding-right: 109px;
+    text-align: left;
+  }
+}
+
+@media (min-width: (@desktop-width)) {
+  .surprise {
+    margin-top: 141px;
+    margin-left: 79px;
+  }
+
+  .surprise--image {
+    width: 245px;
+    height: 289px;
+    background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  }
+
+  .surprise__text {
+    display: block;
+    padding: 190px 46px;
+    text-align: center;
+  }
+
+  .surprise::after {
+    left: 96px;
+  }
 }

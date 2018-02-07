@@ -3,26 +3,97 @@
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  padding-top: 14px;
   background-color: @base-color;
   width: 280px;
-  min-height: 40px;
-  font-size: 14px;
-  line-height: 25px;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .btn--to-all {
+  display: block;
   color: @black-lighter;
   background-color: @bg-lighter;
 }
 
 .btn--sub {
-  padding-top: 0;
   font-family: "oswaldregular", serif;
   border: none;
   outline: none;
   cursor: pointer;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.btn--more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 289px;
+  font-size: 14px;
+}
+
+.btn--order {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .btn--more {
+    margin: 0;
+    margin-right: auto;
+    margin-top: 24px;
+    font-size: 20px;
+    padding-top: 12px;
+    line-height: 27px;
+    width: 247px;
+  }
+
+  .btn--sub {
+    margin-left: 40px;
+    height: 52px;
+    margin-top: -5px;
+    width: 284px;
+    font-size: 20px;
+  }
+
+  .btn--order {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 7px;
+  }
+
+  .btn--to-all {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn--more {
+    margin-left: 190px;
+    margin-top: 32px;
+    width: 245px;
+    padding: 13px 0;
+  }
+
+  .btn--sub {
+    font-size: 20px;
+    line-height: 20px;
+    width: 570px;
+    height: 52px;
+    margin-left: 0;
+  }
+
+  .btn--to-all {
+    width: 169px;
+  }
 }
