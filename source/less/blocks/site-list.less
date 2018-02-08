@@ -103,6 +103,14 @@
   .site-list__link {
     font-size: 20px;
     color: black;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   .site-list__item {
@@ -118,6 +126,18 @@
     position: relative;
   }
 
+  .site-list__item--active {
+    position: relative;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
   .site-list__item--active::after {
     content: "";
     position: absolute;
@@ -125,10 +145,26 @@
     top: 60px;
     left: 0;
     border-bottom: 2px solid @green;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   .site-list__item--active-index {
     position: relative;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   .site-list__item--active-index::after {
