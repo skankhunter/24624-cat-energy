@@ -60,7 +60,7 @@
 
   .input__text {
     font-size: 20px;
-    padding-right: 40px;
+    padding-right: 50px;
     line-height: 20px;
     margin-left: 20px;
   }
@@ -88,11 +88,11 @@
 
     &:focus {
       border-color: #444444;
-
     }
   }
 
-  .input__text:focus .input__pic--letter {
+  .input__text:focus + .input__pic--letter,
+  .input__text:focus + .input__pic--tel {
     fill: #68b738;
   }
 
