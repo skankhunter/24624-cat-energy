@@ -15,7 +15,7 @@
   text-transform: uppercase;
   color: @grey-light;
   padding: 12px 15px;
-  padding-right: 40px;
+  outline: none;
   margin-left: 15px;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
@@ -23,10 +23,12 @@
 
 .input__text--email {
   margin-left: 10px;
+  padding-right: 40px;
 }
 
 .input__text--tel {
   margin-left: 10px;
+  padding-right: 40px;
 }
 
 .input__age {
@@ -38,7 +40,6 @@
   position: absolute;
   top: 15px;
   right: 16px;
-  background: url("../img/icon-mail.svg") no-repeat;
   width: 18px;
   height: 19px;
 }
@@ -47,7 +48,6 @@
   position: absolute;
   top: 12px;
   right: 14px;
-  background: url("../img/icon-phone.svg") no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -60,7 +60,7 @@
 
   .input__text {
     font-size: 20px;
-    padding-right: 40px;
+    padding-right: 50px;
     line-height: 20px;
     margin-left: 20px;
   }
@@ -81,6 +81,25 @@
 }
 
 @media (min-width: @desktop-width) {
+  .input__text {
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:focus {
+      border-color: #444444;
+    }
+  }
+
+  .input__text:focus + .input__pic--letter,
+  .input__text:focus + .input__pic--tel {
+    fill: #68b738;
+  }
+
+  .input__text--error {
+    border-color: #ff8282;
+  }
+
   .input__text--email {
     padding-left: 20px;
   }

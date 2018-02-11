@@ -70,4 +70,15 @@ label {
     top: 10px;
     left: 9px;
   }
+
+  .checkbox__control:disabled + .checkbox__indicator,
+  .checkbox__control:disabled ~ .checkbox__label {
+    opacity: 0.5;
+  }
+
+  .checkbox__indicator {
+    &:hover {
+      border: 1px solid #c9c9c9;
+    }
+  }
 }

@@ -31,15 +31,35 @@
   }
 
   .range-controls__toggle {
+    content: "";
     position: absolute;
-    top: -5px;
-    left: 338px;
-    border: 12px solid #ffffff;
+    top: -4px;
+    left: 341px;
+    width: 31px;
+    height: 31px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px grey;
+
+    &:hover {
+      box-shadow: 0 4px 5px grey;
+    }
+
+    &:active {
+      border: 1px solid @green;
+    }
+  }
+
+  .range-controls__toggle::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 12px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px grey;
-    cursor: pointer;
+    background-color: @green;
   }
 }
 

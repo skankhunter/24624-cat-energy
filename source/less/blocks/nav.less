@@ -69,6 +69,27 @@
   .nav--nojs .site-list__item {
     display: block;
   }
+
+  .nav--nojs .site-list {
+    position: unset;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+  }
+
+  .nav--nojs .site-list__link::before {
+    left: -20px;
+  }
+
+  .nav--nojs .site-list::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 60px;
+    left: 0;
+    background-color: #e6e6e6;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -84,6 +105,10 @@
     line-height: 24px;
     font-family: "oswaldregular", serif;
     font-weight: 300;
+  }
+
+  .nav__logo {
+    padding-top: 0;
   }
 }
 
