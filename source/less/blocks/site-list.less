@@ -1,8 +1,14 @@
 .site-list {
+  position: absolute;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  top: 66px;
+  left: -20px;
+  margin: 0 auto;
   text-align: center;
+  background-color: white;
+  z-index: 2;
+  width: 320px;
+  padding: 0 20px;
 }
 
 .site-list__link {
@@ -15,11 +21,6 @@
   line-height: 20px;
   font-weight: 700;
   padding: 18px 21px;
-  padding-bottom: 19px;
-}
-
-.site-list .site-list__link:last-child {
-  padding-bottom: 10px;
 }
 
 .site-list__link::before {
@@ -27,8 +28,8 @@
   content: "";
   width: 320px;
   height: 1px;
-  top: 0;
-  left: -20px;
+  bottom: 0;
+  left: 0;
   background-color: #e6e6e6;
 }
 
