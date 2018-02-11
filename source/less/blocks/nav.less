@@ -74,6 +74,21 @@
     position: unset;
     margin: 0 auto;
     padding: 0;
+    width: auto;
+  }
+
+  .nav--nojs .site-list__link::before {
+    left: -20px;
+  }
+
+  .nav--nojs .site-list::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 60px;
+    left: 0;
+    background-color: #e6e6e6;
   }
 }
 
