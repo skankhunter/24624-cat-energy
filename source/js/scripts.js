@@ -1,5 +1,7 @@
 var navMain = document.querySelector('.nav');
 var navToggle = document.querySelector('.nav__toggle');
+var form = document.querySelector('.form-main');
+var input = form.querySelector('.input__text');
 
 navMain.classList.remove('nav--nojs');
 
@@ -12,3 +14,12 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('nav--opened');
   }
 });
+
+input.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  if (!input.value) {
+    evt.preventDefault();
+    input.classList.add('input__text--error');
+    console.log('Нужно заполнить все поля');
+  }
+})
