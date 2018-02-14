@@ -8,6 +8,14 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+  &:hover::after {
+    border-bottom: 1px solid #989898;
+  }
+
+  &:active::after {
+    border-bottom: none;
+  }
 }
 
 .slider__list {
@@ -152,14 +160,6 @@
 
   .slider__toggles-text {
     padding: 0;
-
-    &:hover::after {
-      border-bottom: 1px solid #989898;
-    }
-
-    &:active::after {
-      border-bottom: none;
-    }
   }
 
   .slider__toggles-text--before {

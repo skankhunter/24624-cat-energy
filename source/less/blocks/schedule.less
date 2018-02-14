@@ -25,6 +25,18 @@
   color: @black-darker;
   border-top: 1px solid #d9d9d9;
   padding-top: 3px;
+
+  &:hover {
+    .schedule__arrow {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+      width: 30px;
+      height: 11px;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .schedule__text {
@@ -221,20 +233,6 @@
   .schedule__text {
     padding: 0;
     margin-top: -12px;
-  }
-
-  .schedule__link {
-    &:hover {
-      .schedule__arrow {
-        background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-        width: 30px;
-        height: 11px;
-      }
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
   }
 
   .schedule__arrow {

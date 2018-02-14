@@ -20,10 +20,14 @@
   cursor: pointer;
   margin-left: -2px;
   margin-top: -4px;
+
+  &:hover {
+    border: 1px solid #c9c9c9;
+  }
 }
 
 .radio__indicator,
-label {
+.radio {
   display: inline-block;
   vertical-align: middle;
 }
@@ -85,11 +89,5 @@ label {
   .radio__control:disabled + .radio__indicator,
   .radio__control:disabled ~ .radio__label {
     opacity: 0.5;
-  }
-
-  .radio__indicator {
-    &:hover {
-      border: 1px solid #c9c9c9;
-    }
   }
 }
