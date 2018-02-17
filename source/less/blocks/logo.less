@@ -1,3 +1,10 @@
+.logo--nav {
+  display: flex;
+  justify-content: space-between;
+  width: 199px;
+  padding-top: 9px;
+}
+
 .logo__image--cat {
   width: 33px;
   min-height: 39px;
@@ -10,9 +17,27 @@
   min-height: 18px;
   margin-top: 10px;
   margin-left: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .logo--nav {
+    padding-top: 13px;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .logo--nav {
+    padding-top: 0;
+  }
+
   .logo__image--cat {
     display: none;
   }
@@ -26,18 +51,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .logo--nav {
+    margin-right: auto;
+  }
+
   .logo__image--text {
     width: 204px;
     height: 59px;
     margin-left: 0;
     margin-right: 23px;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
   }
 }

@@ -19,6 +19,23 @@
   margin-left: 15px;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+  }
+}
+
+.input__text--error {
+  border-color: #ff8282;
+}
+
+.input__text:focus + .input__pic--letter,
+.input__text:focus + .input__pic--tel {
+  fill: #68b738;
 }
 
 .input__text--email {
@@ -81,25 +98,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .input__text {
-    &:hover {
-      border-color: #cdcdcd;
-    }
-
-    &:focus {
-      border-color: #444444;
-    }
-  }
-
-  .input__text:focus + .input__pic--letter,
-  .input__text:focus + .input__pic--tel {
-    fill: #68b738;
-  }
-
-  .input__text--error {
-    border-color: #ff8282;
-  }
-
   .input__text--email {
     padding-left: 20px;
   }

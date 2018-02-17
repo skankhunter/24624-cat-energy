@@ -11,11 +11,19 @@
   margin-top: 13px;
 }
 
-.copyright__link-logo {
+.copyright__link--logo {
   width: 27px;
   height: 34px;
   display: block;
   margin-top: 5px;
+
+  &:hover {
+    fill: #6bb83c;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -30,15 +38,5 @@
   .copyright {
     margin-top: 0;
     margin-right: 0;
-  }
-
-  .copyright__link-logo {
-    &:hover {
-      fill: #6bb83c;
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
   }
 }

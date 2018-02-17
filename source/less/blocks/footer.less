@@ -28,6 +28,14 @@ footer {
   height: 25px;
   cursor: pointer;
   margin-bottom: 29px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer__social-wrap {
@@ -82,7 +90,8 @@ footer {
   }
 
   .footer__wrap {
-    width: 1220px;
+    width: 800px;
+    position: relative;
   }
 
   .footer__map {
@@ -100,21 +109,13 @@ footer {
     width: 1220px;
     display: flex;
     justify-content: space-between;
-    padding: 44px 13px;
+    padding: 44px 110px;
     min-height: auto;
   }
 
   .footer__logo {
     margin: 0;
     padding-top: 0;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
   }
 
   .footer__contacts--index::after {

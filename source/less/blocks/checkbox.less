@@ -18,10 +18,14 @@
   border: 1px solid #bababa;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    border: 1px solid #c9c9c9;
+  }
 }
 
 .checkbox__indicator,
-label {
+.checkbox {
   display: inline-block;
   vertical-align: middle;
 }
@@ -74,11 +78,5 @@ label {
   .checkbox__control:disabled + .checkbox__indicator,
   .checkbox__control:disabled ~ .checkbox__label {
     opacity: 0.5;
-  }
-
-  .checkbox__indicator {
-    &:hover {
-      border: 1px solid #c9c9c9;
-    }
   }
 }
