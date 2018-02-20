@@ -54,36 +54,49 @@
   .radio {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .radio__indicator,
   .radio:checked + .radio__indicator::before {
-    margin-right: 16px;
+    margin-right: 14px;
   }
 
   .radio__indicator {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 39px;
     border: 1px solid #d1d1d1;
     position: relative;
     cursor: pointer;
-    margin-left: -7px;
-    margin-top: -9px;
+    margin-left: -5px;
+    margin-top: -7px;
   }
 
   .radio__control:checked + .radio__indicator::before {
     width: 18px;
     height: 18px;
-    top: 11px;
-    left: 11px;
+    top: 10px;
+    left: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .radio {
+    margin-bottom: 19px;
+  }
+
+  .radio__indicator {
+    margin-left: -7px;
+  }
+
   .radio__indicator,
   .radio:checked + .radio__indicator::before {
-    margin-right: 13px;
+    margin-right: 15px;
+  }
+
+  .radio__control:checked + .radio__indicator::before {
+    top: 11px;
+    left: 10px;
   }
 
   .radio__control:disabled + .radio__indicator,

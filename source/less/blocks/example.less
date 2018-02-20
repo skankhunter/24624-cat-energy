@@ -9,7 +9,7 @@
 
 .example__wrap {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
 }
 
 .example__description {
@@ -49,7 +49,7 @@
   .example::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     width: 100%;
     min-height: 463px;
@@ -58,20 +58,20 @@
   }
 
   .example__wrap {
-    width: 768px;
+    max-width: 768px;
     position: relative;
   }
 
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    padding-right: 32px;
+    padding-right: 15px;
   }
 
   .example__subtitle {
     position: absolute;
-    top: 265px;
-    right: 30px;
+    top: 264px;
+    right: 31px;
     font-size: 20px;
     line-height: 29px;
     width: 186px;
@@ -97,7 +97,7 @@
   .example::after {
     position: absolute;
     content: "";
-    top: 217px;
+    top: 256px;
     left: 0;
     width: 100%;
     height: 442px;
@@ -107,8 +107,8 @@
 
   .example__wrap {
     display: flex;
-    width: 1440px;
-    padding-top: 149px;
+    max-width: 1300px;
+    padding-top: 188px;
   }
 
   .example__text-wrap {

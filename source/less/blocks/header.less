@@ -1,4 +1,4 @@
-header {
+.header {
   width: 320px;
   margin: 0 auto;
 }
@@ -19,7 +19,7 @@ header {
 }
 
 @media (min-width: @tablet-width) {
-  header {
+  .header {
     width: 768px;
   }
 
@@ -27,8 +27,9 @@ header {
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 14px;
+    padding-top: 16px;
     margin: auto;
+    margin-bottom: -1px;
   }
 
   .header__wrap::after {
@@ -37,11 +38,33 @@ header {
 }
 
 @media (min-width: @desktop-width) {
-  header {
-    width: 1440px;
+  .header {
+    width: auto;
+    margin: 0;
+    position: relative;
   }
 
+  .header--index {
+    position: relative;
+    padding-bottom: 95px;
+  }
+
+  .header--index::after {
+    content: "";
+    position: absolute;
+    left: 53%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-size: 680px 696px;
+    background-color: #64a83c;
+  }
+
+
   .header__wrap {
-    padding-top: 46px;
+    width: 1300px;
+    padding: 46px 40px;
+    padding-bottom: 0;
   }
 }

@@ -36,6 +36,10 @@
   padding-bottom: 0;
 }
 
+.surprise__text-inner {
+  display: block;
+}
+
 @media (min-width: (@tablet-width)) {
   .surprise {
     margin: 0 auto;
@@ -68,7 +72,7 @@
 
 @media (min-width: (@desktop-width)) {
   .surprise {
-    margin-top: 141px;
+    margin-top: 143px;
     margin-left: 79px;
   }
 
@@ -78,14 +82,16 @@
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("./img/gift-photo-desktop@2x.jpg");
-      background-size: 1338px auto;
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 246px;
     }
   }
 
   .surprise__text {
     display: block;
-    padding: 190px 46px;
+    padding: 0 36px;
+    padding-top: 186px;
+    padding-bottom: 40px;
     text-align: center;
   }
 
